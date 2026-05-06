@@ -1,0 +1,27 @@
+PASSO A PASSO NETBEANS
+=====================
+
+1. Abra o NetBeans.
+2. Clique em File > Open Project.
+3. Selecione a pasta do projeto.
+4. Abra src/main/java/main/Principal.java.
+5. Clique com o botão direito em Principal.java.
+6. Clique em Run File.
+
+SE O PROJETO NÃO ABRIR COMO MAVEN
+- Crie um projeto Java/Maven novo.
+- Copie a pasta src e o pom.xml para dentro dele.
+
+PARA TROCAR AS IMAGENS
+- Vá em src/main/resources/imagens.
+- Substitua o arquivo pelo mesmo nome.
+
+PARA EDITAR OS ROBÔS
+- Abra models/CatalogoRobos.java.
+
+PARA EDITAR AS PERGUNTAS
+- Abra pesquisa/CatalogoPerguntas.java.
+
+PARA MUDAR O TAMANHO DAS TELAS
+- Abra UtilTela.configurarDialogo(...).
+- Ou altere as dimensões em cada Fml.

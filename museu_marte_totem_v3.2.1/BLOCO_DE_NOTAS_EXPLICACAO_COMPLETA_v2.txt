@@ -1,0 +1,78 @@
+BLOCO DE NOTAS - EXPLICAÇÃO COMPLETA DO PROGRAMA
+================================================
+
+1) NOME DO PROJETO
+Projeto: Totem Interativo do Museu Multitemático - Robôs Exploradores de Marte
+
+2) OBJETIVO GERAL
+Este programa foi desenvolvido em Java, com Programação Orientada a Objetos (POO),
+usando interface gráfica em JDialog, para funcionar como um totem vertical touchscreen.
+
+O visitante pode:
+- ver os robôs exploradores de Marte;
+- abrir a página de cada robô;
+- ler informações educativas em português;
+- visualizar uma imagem ilustrativa;
+- dar nota de 1 a 5 estrelas para cada robô;
+- responder um questionário com 5 perguntas;
+- ver o resultado final do questionário;
+- dar uma nota geral para a exposição;
+- receber uma mensagem de agradecimento;
+- voltar ao início do sistema.
+
+3) ESTRUTURA DE PACOTES
+main -> inicialização do sistema
+frontend -> formulários e interface gráfica
+models -> classes de dados
+pesquisa -> quiz e relatórios
+
+4) POO ATENDIDA
+- Classe base: RegistroBase
+- Herança: RoboExplorador extends RegistroBase
+- Atributos protected
+- Código simples e didático
+
+5) FLUXO DO SISTEMA
+Principal -> FmlMenuPrincipal -> FmlDetalhesRobo / FmlQuestionario / FmlRelatorio
+No quiz: FmlQuestionario -> FmlAvaliacaoFinal -> mensagem de agradecimento
+
+6) VETORES USADOS
+- int[] respostas = guarda respostas do quiz
+- int[] visualizacoesRobos = guarda visitas nos robôs
+- int[] somaNotasRobos = soma notas por robô
+- int[] quantidadeNotasRobos = conta quantas notas cada robô recebeu
+- int[] contagemNotasFinais = conta notas gerais da experiência
+- int[][] contagemRespostasPerguntas = conta marcações por alternativa
+
+7) LGPD
+O sistema não coleta dados pessoais.
+Não grava nome, documento, telefone ou e-mail.
+
+8) PERSISTÊNCIA
+Não existe gravação em banco de dados e nem em arquivo.
+Ao fechar o programa, as estatísticas são zeradas.
+
+9) TELA TOUCHSCREEN
+O sistema usa botões grandes e janela vertical para parecer um totem de pé.
+Também possui teclado virtual próprio.
+
+10) COMO EXPLICAR CADA TELA
+- FmlMenuPrincipal: menu inicial e cartões dos robôs
+- FmlDetalhesRobo: dados completos e avaliação por estrelas
+- FmlQuestionario: 5 perguntas de múltipla escolha
+- FmlAvaliacaoFinal: nota geral da visita
+- FmlRelatorio: estatísticas temporárias
+- FmlTecladoVirtual: digitação sem teclado do Windows
+
+11) COMO MOSTRAR NA APRESENTAÇÃO
+1. Abrir o menu.
+2. Mostrar os cartões.
+3. Abrir um robô.
+4. Dar uma nota.
+5. Fazer o quiz.
+6. Mostrar o resultado.
+7. Dar nota final.
+8. Abrir o relatório.
+
+12) RESUMO
+O projeto está pronto para ser executado no NetBeans e apresentado na APS.
